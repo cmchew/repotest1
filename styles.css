@@ -1,0 +1,190 @@
+/* Reset & base */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 1rem;
+  background-color: white;
+  color: rebeccapurple;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: rebeccapurple;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navbar */
+
+header {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+  background-color: thistle;
+}
+
+/* Hero Section */
+
+.hero {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.125rem;
+  color: #444;
+}
+
+/* Circles List */
+
+.circles-list {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.circle-card {
+  background-color: thistle;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(147, 112, 219, 0.3);
+  color: #2e0854;
+}
+
+.circle-card h2 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+}
+
+.circle-card p {
+  margin: 0.25rem 0;
+}
+
+.btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1.25rem;
+  background-color: rebeccapurple;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #4b0082; /* darker shade */
+}
+
+/* Info Section */
+
+.info-section {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  text-align: center;
+  font-size: 1.125rem;
+}
+
+.learn-more {
+  font-weight: 600;
+}
+
+/* Email Signup */
+
+.email-signup {
+  max-width: 500px;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+.email-signup h3 {
+  margin-bottom: 1rem;
+}
+
+.signup-form {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.signup-form input[type="email"] {
+  padding: 0.625rem 1rem;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 1rem;
+  flex: 1 1 250px;
+  max-width: 100%;
+}
+
+.signup-form button {
+  flex-shrink: 0;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .circle-card {
+    padding: 1rem;
+  }
+}
